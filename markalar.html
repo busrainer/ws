@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markalar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+      
+        .brands {
+            background-color: #f9f1f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        
+        .brands h2 {
+            font-size: 2.5rem;
+            color: #cb90bf;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        
+        .brand-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        
+        .brand-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 20%;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+       
+        .brand-card:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .brand-card img {
+            width: 100%;
+            height: auto;
+            max-width: 150px;
+            border-radius: 8px;
+        }
+
+       
+        .brand-card h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: #444;
+        }
+
+   
+        @media (max-width: 768px) {
+            .brand-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .brand-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="brands">
+        <h2>Markalar</h2>
+        <div class="brand-container">
+            <div class="brand-card">
+                <img src="resimler/dior-dior-addict-edt-100-ml-bayan-parfum.jpg" alt="Dior">
+                <h3>Dior</h3>
+            </div>
+            <div class="brand-card">
+                <img src="resimler/chanel-coco-mademoiselle-sac-parfumu-35-ml-10045.jpg" alt="Chanel">
+                <h3>Chanel</h3>
+            </div>
+            <div class="brand-card">
+                <img src="resimler/gucci.jpg" alt="Gucci">
+                <h3>Gucci</h3>
+            </div>
+            <div class="brand-card">
+                <img src="resimler/victoria.jpg" alt="Victoria's Secret">
+                <h3>Victoria's Secret</h3>
+            </div>
+            <div class="brand-card">
+                <img src="resimler/mad-pretty-beauty-160-ml-sac-parfumu16-0-7b24.jpg" alt="Mad">
+                <h3>Mad</h3>
+            </div>
+            <div class="brand-card">
+                <img src="resimler/3vqoa5c1.yny_MP_b6a26854-56a5-477e-990c-a39ebab7bea9_1_84350025243694632943974019476_845.jpg" alt="Calvin Klein">
+                <h3>Calvin Klein</h3>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

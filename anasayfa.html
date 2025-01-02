@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koku Dünyası</title>
+    <style>
+        body {
+            background-color: rgb(121, 161, 203);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(94, 79, 59);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+        }
+        .sol_kisim {
+            background-color: rgb(221, 186, 210);
+            width: 25%;
+            padding: 20px;
+            text-align: center;
+        }
+        .sag_kisim {
+            width: 75%;
+            padding: 20px;
+            overflow-y: auto; 
+        }
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            padding: 10px;
+            border-bottom: solid 1px white;
+        }
+        .menu li:hover {
+            background-color: rgb(255, 255, 255);
+            color: brown;
+        }
+        a {
+            color: rgb(82, 82, 82);
+            text-decoration: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .btn {
+            background-color: rgb(94, 79, 59);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(121, 161, 203);
+        }
+        .dropbtn {
+            background-color: #ee95e5;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            width: 100%;
+        }
+        .dropdown {
+            position: relative;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(97, 108, 175);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sol_kisim">
+            <img src="resimler/anasayfa.jpg" alt="Koku Dünyası">
+            <br>
+            <p>KOKU DÜNYASI</p>
+            <br>
+            <ul class="menu">
+                <li><a href="evyasam.html">Ev & Yaşam</a></li>
+                <li><a href="guzellikbakim.html">Güzellik & Bakım</a></li>
+                <li><a href="parfumler.html">Parfümler</a></li>
+                <li><a href="sikcasorulansorular.html">Sıkça Sorulan Sorular</a></li>
+                <li><a href="yorumlar.html">Yorumlar</a></li>
+            </ul>
+        </div>
+        <div class="sag_kisim">
+            <h1>Kokunun Tanımı</h1>
+            <p> Koku, bir ortamda bulunan kimyasalların, belirli reseptörler üzerinde meydana getirdikleri etkiler sonucu 
+                algılanan duyusal bir deneyimdir.Koku aynı zamanda canlılar dünyasında önemli bir haberleşme aracıdır. Mükemmel 
+                bir sinyaldir ve bitkilerden diğer birçok canlıya kadar koku sayesinde haberleşen canlılar evrenin gizli diliyle 
+                var olurlar.
+                Koku, Latince “fumum” olarak bilinir. Fumum kelimesi ise günlük kullanımda “duman” anlamına gelir. Parfüm kelimesi 
+                ise buradan yola çıkarak, Latince tümüyle uçucu anlamına gelen per fumum sözcüğünden türemiştir.
+            </p>
+            <h1>Kokunun Tarihi</h1>
+            <p>Kokuların dünyasına dair ilk çalışmayı Atinalı Theophrastus yapar. Bir gözlemci ve koleksiyoncu olan Theophrastus 
+                500'e yakın bitkinin morfolojik özelliklerini birçoğunu da resimleyerek ortaya koymuş ve Atina'da bir botanik 
+                bahçesinde tıbbi bitkileri yetiştirmiştir. Aristoteles'in hayvanlar dünyasıyla ilgili sınıflamasını, bitkileri de 
+                kapsayacak şekilde genişletmiştir. Bitkiler ve kokuları üzerine yaptığı çalışmalarla “Botaniğin Babası” unvanını 
+                alan Theophrastus’un kokulara ve bitkilere olan tutkusu aynı zamanda öğrencisi olan Makedonyalı Büyük İskender’i de 
+                etkisi altına alır. Büyük İskender meşhur Asya seferi sırasında karşılaştığı ilginç bitkileri ve kokulu nesneleri 
+                hocası Theophrastus’a yollar. Theophrastus bu nesneler üzerinde yaptığı incelemelerin ardından dokuz ciltlik 
+                “De Causis Plantarum” (Bitkiler Üzerine İncelemeler) ve iki ciltlik “De Historia Plantarum” (Bitkilerin Tarihi 
+                Hakkında) isimli eserlerini yazar. Theophrastus’un yazdığı bu eserler günümüze kadar koku ve bitki uzmanlarının 
+                temel başvuru kaynağı olmuştur. Theophrastus’un çalışmaları Roma medeniyeti üzerinde de derin etkiler bırakarak 
+                Romalı kültüründe kokuyu özel bir çalışma alanına dönüştürür. Roma hamamlarından saraylarına, kumaş imalathanelerinden 
+                kiliselerine kadar her yerde koku özel bir araç olarak kullanılır.</p>
+                <h1>Kokunun Yolculuğu</h1>
+                <p>Kokuyu algılamak ve etkisini anlamak iki süreçte gerçekleşir: Fizyolojik Faz ve Psikolojik Faz. Fizyolojik Faz; 
+                    kokunun daha fiziksel olarak işlendiği süreç yani burunda bulunan stimulus bölgesi boyunca bulunan nöronların, 
+                    mukus tarafından çözünen molekülleri algılayıp beyne iletmesi evresidir. Psikolojik Faz ise; kokunun psikolojik 
+                    açıdan algılanması evresi ve en çok ilgi gören, evrimsel gelişime en çok destek veren fazlardan biri olarak 
+                    tanımlanır.
+                    Kokunun özelikle psikolojik faz evresinin etkisi çok eski medeniyetlere ve dinlere kadar uzanmaktadır. Müslüman 
+                    mimarların çalışmalarında, kokunun duygusal geçiş sağlamasından dolayı, ikna, manipüle etme gibi alanlarda aracı 
+                    enstrüman olarak kullanıldığını görebiliriz. Evliya Çelebi bu tekniğe uygun bir çalışmayı Amida(Diyarbakır) seyahati
+                    sırasında, İpariye Camii’nin inşaatında minare harcına “misk” tozu ekleyerek özellikle sabah gün doğumuyla birlikte 
+                    sabah ezanına imani bir kokunun eşlik edip müminleri mest ettiğini söyler.
+                    Yahudilik ve Hristiyanlıkta da koku, insanların yaşamında önemliydi. Tevrat’ta ayrıntılı parfüm tariflerinin yer 
+                    alması, kokunun Yahudilikteki yaygınlığını gösteriyor. Eski medeniyetlerde ve dinlerde üretilen yağların niteliği, 
+                    aynı zamanda toplumdaki statüleri de belirleyici bir role sahiptir. Günümüzde “mesh yağı” olarak bilinen yağ, sadece
+                    asillerin, yüksek din adamlarının kullandığı bir kokudur. Mesh kelimesinin İbranicede “ovmak, tatbik etmek” 
+                    manalarında kullanılması da, günümüzde sıkça kullandığımız “masaj” kelimesine çıkması ve masaj yapılırken özel 
+                    kokuların, yağların kullanılmasının da buradan geldiğini doğrulayabilir.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Koku Dünyası - Tüm Hakları Saklıdır
+    </footer>
+</body>
+</html>

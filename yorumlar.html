@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yorumlar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .comments-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .comments-section h2 {
+            font-size: 24px;
+            color: #6d1d5d;
+            margin-bottom: 20px;
+        }
+        .comment-form {
+            margin-bottom: 30px;
+        }
+        .comment-form textarea {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .comment-form button {
+            background-color: #6d1d5d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #5b134a;
+        }
+        .comment {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .comment h4 {
+            margin: 0 0 10px;
+            color: #6d1d5d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Koku Dünyası</h1>
+        </div>
+        <div class="comments-section">
+            <h2>Yorumlar</h2>
+            <div class="comment-form">
+                <textarea placeholder="Yorumunuzu buraya yazın..."></textarea>
+                <button type="submit">Yorum Gönder</button>
+            </div>
+            <div class="yorum">
+                <h4>Kullanıcı 1</h4>
+                <p>Harika bir içerik! Daha fazlasını sabırsızlıkla bekliyoruz.</p>
+            </div>
+            <div class="yorum">
+                <h4>Kullanıcı 2</h4>
+                <p>Çok bilgilendirici bir yazı olmuş, teşekkürler!</p>
+            </div>
+        </div>
+        <div class="yorum">
+            <h4>Kullanıcı 3</h4>
+            <p>Bu site sayesinde parfümlerin nasıl ve ne tür olduğunu anladım, sağ olun!</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

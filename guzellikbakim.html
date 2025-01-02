@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev & Yaşam</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row; 
+            height: 100vh;
+        }
+
+        .section {
+            flex: 1; 
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .section:hover img {
+            transform: scale(1.1);
+        }
+
+        .section h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            z-index: 10; 
+            pointer-events: none; 
+        }
+
+        .section a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+        }
+
+        .cubuk-koku {
+            background-color: rgba(221, 186, 210, 0.7);
+        }
+
+        .oda-spreyi {
+            background-color: rgba(121, 161, 203, 0.7);
+        }
+
+        .mum {
+            background-color: rgba(94, 79, 59, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section sac-parfumu">
+                <h2>Saç Parfümü</h2>
+                <img src="resimler/mad-pretty-beauty-160-ml-sac-parfumu16-0-7b24.jpg" alt="Saç Parfümü">
+            </a>
+        </div>
+
+        <div class="section vucut-spreyi">
+                <h2>Vücut Spreyi</h2>
+                <img src="resimler/bare-vanilla-vucut-spreyi-11b-2a.jpg" alt="Vücut Spreyi">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+

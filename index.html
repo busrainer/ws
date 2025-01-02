@@ -1,0 +1,52 @@
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Koku Dünyası</title>
+        </head>
+</html>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Resimler/index.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+    .btn{
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: inherit;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #000000, -6px 6px 12px #030101;
+}
+.btn::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.btn:hover::before{
+    width: 9em;
+    
+}
+</style>
+</head>
+<body>
+    <a href="ikinci.html"><button class="btn">Tıklayınız!</button></a>
+</body>

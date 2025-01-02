@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koku Önerileri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .recommendations {
+            background-color: #f0e6f6;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .recommendations h2 {
+            font-size: 2.5rem;
+            color: #cb90bf;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .recommendation-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .recommendation-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 28%;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .recommendation-card:hover {
+            transform: scale(1.05);
+        }
+        .recommendation-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .recommendation-card h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: #444;
+        }
+
+        .recommendation-card p {
+            font-size: 1rem;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .recommendation-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .recommendation-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="recommendations">
+        <h2>Koku Önerileri</h2>
+        <div class="recommendation-container">
+            <div class="recommendation-card">
+                <h3>Çiçek Parfümleri</h3>
+                <p>Yazın enerjik havasını hissetmek için çiçeksi kokular ideal.</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>Odunsu Parfümler</h3>
+                <p>Soğuk havalarda sıcak ve derin bir parfüm arayışındaysanız odunsu kokular size hitap edebilir.</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>Narenciye Parfümleri</h3>
+                <p>Serinletici narenciye kokuları, ferahlatıcı bir etki yaratır ve gün boyu enerjik kalmanıza yardımcı olur.</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>Baharatlı Parfümler</h3>
+                <p>Soğuk kış günlerinde sıcak bir etki yaratmak için baharatlı kokuları tercih edebilirsiniz.</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>Su Parfümleri</h3>
+                <p>Ferahlık ve tazelik arıyorsanız, su kokuları gün boyu sizi rahatlatır.</p>
+            </div>
+            <div class="recommendation-card">
+                <h3>Tatlı Parfümler</h3>
+                <p>Tatlı ve gourmand kokular, nostaljik ve cezbedici bir hava yaratır.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
